@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bill_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="日期"/>
+    <TextView
+        android:id="@+id/bill_name_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bill_name"
+        android:layout_alignParentRight="true"
+        android:textSize="50dp" />
+    <TextView
+        android:id="@+id/bill_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bill_name"
+        android:textSize="50dp"
+        android:text="单价"/>
+    <TextView
+        android:id="@+id/bill_money_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bill_name"
+        android:layout_toRightOf="@+id/bill_money"
+        android:layout_alignParentRight="true"
+        android:textSize="50dp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/bill_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bill_money"
+        android:textSize="50dp"
+        android:text="数量"/>
+
+    <TextView
+        android:id="@+id/bill_number_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bill_money"
+        android:layout_toRightOf="@+id/bill_number"
+        android:textSize="50dp"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/bill_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bill_number"
+        android:text="删除"
+        android:textSize="50dp" />
+    <Button
+        android:id="@+id/bill_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bill_number"
+        android:text="修改"
+        android:textSize="50dp" />
+</RelativeLayout>
